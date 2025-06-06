@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regina Collie Peñalosa - Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
+    <style>
+
+        /* General Styles  */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+    /* Smooth scrolling for anchor links */
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section {
+    background-color: white;
+    margin-bottom: 2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.8s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Header  */
+header {
+    background-color: #673ab7;
+    /* A nice purple */
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    margin-bottom: 0.5em;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #512da8;
+}
+
+        </style
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Regina Collie Peñalosa</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#interests">Interests</a></li>
+                    <li><a href="#qa">Q&A</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <!-- <img src="placeholder-profile.jpg" alt="Regina Collie Peñalosa"> -->
+                <div class="about-text">
+                    <p>Hello! I'm Regina Collie Peñalosa. I'm passionate about finance, self-improvement, and exploring new things. This is a glimpse into my professional skills and personal interests.</p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> Email: <a href="mailto:reginacollie04@gmail.com">reginacollie04@gmail.com</a></p>
+                        <p><i class="fas fa-phone"></i> Mobile: <a href="tel:09056285867">09056285867</a>, <a href="tel:09692794009">09692794009</a></p>
+                        <p><i class="fas fa-map-marker-alt"></i> Location: Magatas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-group" onclick="showSkillDetails('soft-skills')">
+                    <h3>Soft Skills <i class="fas fa-chevron-right"></i></h3>
+                    <div class="skill-details" id="soft-skills">
+                        <ul>
+                            <li>Empathy and emotional intelligence</li>
+                            <li>Adaptability and resilience under pressure</li>
+                            <li>Detail-oriented with a proactive approach</li>
+                            <li>Conflict resolution and diplomacy</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skill-group" onclick="showSkillDetails('tech-skills')">
+                    <h3>Technical & Organizational <i class="fas fa-chevron-right"></i></h3>
+                    <div class="skill-details" id="tech-skills">
+                        <p>Tools: Twilio, Slack, Google Sheets, Excel, Zimbra, LinkedIn Recruiter, Outlook, Zoom, Microsoft Teams, Google Calendar, Canva, Skype, WhatsApp, Google Mail, Hurey</p>
+                        <ul>
+                            <li>Strong written and verbal communication</li>
+                            <li>Time management and multitasking</li>
+                            <li>Analytical thinking and decision-making</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skill-group" onclick="showSkillDetails('leadership-skills')">
+                    <h3>Leadership & Operations <i class="fas fa-chevron-right"></i></h3>
+                    <div class="skill-details" id="leadership-skills">
+                        <ul>
+                            <li>Branch operations oversight (sales, finance, compliance)</li>
+                            <li>Team leadership, coaching, and performance management</li>
+                            <li>Strategic goal-setting and results tracking</li>
+                            <li>Financial statement analysis and performance reporting</li>
+                            <li>Customer-focused service culture</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skill-group" onclick="showSkillDetails('customer-skills')">
+                    <h3>Customer Service <i class="fas fa-chevron-right"></i></h3>
+                    <div class="skill-details" id="customer-skills">
+                        <ul>
+                            <li>Guest support via web chat and SMS</li>
+                            <li>Issue resolution and real-time problem-solving</li>
+                            <li>Knowledge of vacation rental platforms (VRBO, Airbnb, Booking.com)</li>
+                            <li>Handling guest reviews and reputation management</li>
+                            <li>Providing detailed info on property availability and amenities</li>
+                            <li>Building a strong brand through exceptional guest experiences</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skill-group" onclick="showSkillDetails('recruitment-skills')">
+                    <h3>Recruitment <i class="fas fa-chevron-right"></i></h3>
+                    <div class="skill-details" id="recruitment-skills">
+                        <ul>
+                            <li>End-to-end recruitment (sourcing, screening, interviewing)</li>
+                            <li>Onboarding new hires and ensuring smooth transitions</li>
+                            <li>Collaboration with hiring managers to understand role requirements</li>
+                            <li>Culture fit assessment and employer branding</li>
+                            <li>High-volume hiring and talent pipeline management</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="interests" class="section">
+        <div class="container">
+            <h2>Interests & Hobbies</h2>
+            <div class="interests-grid">
+                <div class="interest">
+                    <i class="fas fa-film"></i>
+                    <p>Movies</p>
+                </div>
+                <div class="interest">
+                    <!-- <i class="fas fa-shuttlecock"></i> -->
+                    <p>Badminton</p>
+                </div>
+                <div class="interest">
+                    <i class="fab fa-tiktok"></i>
+                    <p>TikTok</p>
+                </div>
+                <div class="interest">
+                    <i class="fas fa-music"></i>
+                    <p>Singing/Dancing</p>
+                </div>
+                <div class="interest">
+                    <i class="fas fa-plane"></i>
+                    <p>Traveling</p>
+                </div>
+                <div class="interest" id="image-gallery-trigger">
+                    <i class="fas fa-images"></i>
+                    <p>Photo Gallery</p>
+                </div>
+            </div>
+
+            <div id="image-gallery-modal" class="modal">
+                <div class="modal-content">
+                   <!--  <span class="close">&times;</span>
+                    <h3>Photo Gallery</h3>
+                    <div class="image-gallery">
+                        <img src="placeholder-image-1.jpg" alt="Hobby 1">
+                        <img src="placeholder-image-2.jpg" alt="Hobby 2">
+                        </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="qa" class="section">
+        <div class="container">
+            <h2>Q&A</h2>
+            <div class="qa-content">
+                <div class="qna-item">
+                    <h3>What part of finance do you enjoy?</h3>
+                    <p>Behavioural finance, analysing financial performance and uncovering insights and investing strategy.</p>
+                </div>
+                <div class="qna-item">
+                    <h3>How do you spend your weekends?</h3>
+                    <p>I usually spend my weekends cleaning the house, watching YouTube videos to learn new skills, and creating content to promote my skincare routine or products I personally use. I'm planning to post them on social media soon to start earning from content creation. If I have extra time, I like going for a walk to stay fit or playing games if I have a duo or someone to team up with. Weekends are also my time for self-improvement whether it’s discovering something new or working on areas where I can grow.</p>
+                </div>
+                <div class="qna-item">
+                    <h3>Your favourite hobby?</h3>
+                    <p>When I have free time, I love watching movies, playing badminton, making TikTok videos, singing or dancing, and traveling or exploring new places.</p>
+                </div>
+                <div class="qna-item">
+                    <h3>What is your favourite sporting code and who do you follow?</h3>
+                    <p>I love playing badminton and frisbee, but I don’t have a specific athlete or public figure that I regularly follow.</p>
+                </div>
+                <div class="qna-item">
+                    <h3>What are your best habits?</h3>
+                    <p>One of my best habits, in my opinion, is drinking water first thing in the morning on an empty stomach because I believe it helps cleanse the kidneys.</p>
+                </div>
+                <div class="qna-item">
+                    <h3>What are your worst habits?</h3>
+                    <p>I think my worst habit is not preparing ahead of time, which often leads to last-minute cramming. That's why, when I go to work, I make sure to prepare everything I need to bring, including the food I usually have for lunch.</p>
+                </div>
+                <div class="qna-item">
+                    <h3>What is the best concert you have ever been too?</h3>
+                    <p>I’ve never been to a concert, but maybe soon, when I have some extra money, as I need to prioritize more important expenses. If given the chance, I would love to see local bands like Arthur Nerry and December Avenue, as well as international artists like BTS, Blackpink, Taylor Swift, and Sam Smith.</p>
+                </div>
+                <div class="qna-item">
+                    <h3>What is the last book you read?</h3>
+                    <p>The last book I read was “Something Deadly on Desert Drive”</p>
+                </div>
+                <div class="qna-item">
+                    <h3>What are you passionate about?</h3>
+                    <p>I’m passionate about discovering and learning new things like making graham bars, cooking a tuna omelette, or finding healthy habits that help me feel confident in wearing my summer outfits.</p>
+                </div>
+                <div class="qna-item">
+                    <h3>What is your secret talent nobody knows about?</h3>
+                    <p>I don’t think I have any hidden talents I’m way too expressive for that. Especially when it comes to singing if you hear someone belting out their favourite song like it’s a concert, that’s probably me.</p>
+                </div>
+                <div class="qna-item">
+                    <h3>How do you prefer to receive feedback?</h3>
+                    <p>I prefer to receive feedback that is honest, constructive, and specific. Since we work virtually, I appreciate feedback through clear messages whether it’s via email, chat, or a quick video call. It helps me understand exactly what needs improvement so I can make the necessary changes right away. I’m always open to learning and growing, and I value feedback as a key part of getting better at what I do.</p>
+                </div>
+                <div class="qna-item">
+                    <h3>If you were a crayon, which colour would you be?</h3>
+                    <p>Purple, because it’s more than just a color. It represents imagination, deep thinking, and spiritual awareness. It reflects who I am on the inside: confident, unique, and always passionate about standing out in my own way.</p>
+                </div>
+                <div class="qna-item">
+                    <h3>What is your favourite family tradition?</h3>
+                    <p>Our family always celebrates Christmas and New Year together, and being complete is a must. It’s a tradition that we never skip because it’s one of the few times when everyone has a bonus or enough money to come home. Some of our relatives even file leave just to visit our province and be with the whole family during the holidays.</p>
+                </div>
+                <div class="qna-item">
+                    <h3>If you were not doing this job, what would you be doing?</h3>
+                    <p>If I weren’t doing this job, I think I’d be a nurse. Lately, I’ve realized that I have a growing interest in the medical field. These days, health truly is wealth if you're not healthy or don’t know how to take care of your body, it can lead to unnecessary stress and overthinking. I’d love to be in a role where I can help others take care of their health and well-being.</p>
+                </div>
+                <div class="qna-item">
+                    <h3>What professional associations/industry groups do you belong to?</h3>
+                    <p>I’m not currently a member of any formal professional associations, but I’ve been actively involved in team training sessions, performance reviews, and industry-specific upskilling during my time in guest services, recruitment, and finance. I’m definitely open to joining groups related to customer experience, virtual assistance, or HR and recruitment to grow professionally and connect with others in the field.</p>
+                </div>
+                <div class="qna-item">
+                    <h3>What are 5 things you “can’t live without”?</h3>
+                    <p>My family, my job, my eyeglasses, my wallet, and my phone.</p>
+                </div>
+                <div class="qna-item">
+                    <h3>What is your biggest dream in life?</h3>
+                    <p>I dream of having my own apartment rental business one day. I know the upfront cost could reach millions in Philippine pesos, which is why I’m focused on working hard now so I can save, invest wisely, and eventually turn that dream into my retirement plan.</p>
+                </div>
+                <div class="qna-item">
+                    <h3>Who did you want to be when you were 7 or 8?</h3>
+                    <p>When I was younger, I wanted to be a princess because princesses wore beautiful dresses, had pretty faces, and always had a feast of delicious food like Belle, Aurora, Cinderella, Tiana, Princess Ariel.</p>
+                </div>
+                <div class="qna-item">
+                    <h3>If you could give your 18-year old self one piece of advice, what would it be?</h3>
+                    <p>If I could give my 18-year-old self-one piece of advice, it would be this: Always manage your money wisely, learn to control your spending and invest smartly, because one day, poor decisions could leave you drowning in debt. Don’t forget to love yourself and never be afraid to take risks or try something new. You only live once, so be smart, brave, and confident. That’s how you’ll achieve the dreams you’ve always wanted. Don’t be afraid to make mistakes, every failure is a lesson and an opportunity to grow. And most importantly, never take your family for granted. When life gets tough and everything else fades, they’re the ones who will stand by you. It's okay to make friends but remember not everyone deserves your full trust.</p>
+                </div>
+                <div class="qna-item">
+                    <h3>If you were to receive a gift for going above and beyond with a dollar value of roughly $100, what are the top 3 things you would most like to receive?</h3>
+                    <p>I really want to buy an iPhone, but I can’t afford it at the moment since I’m supporting my family. Hopefully, once I have the right budget, I’ll be able to get one so I can use its nice camera for creating better videos.</p>
+                </div>
+                <div class="qna-item">
+                    <h3>What is your favourite coffee?</h3>
+                    <p>Caramel Macchiato</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Regina Collie Peñalosa</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+<script>
+
+    function showModal(type) {
+    const modal = document.getElementById('skills-modal');
+    const modalTitle = document.getElementById('skills-modal-title');
+    const modalList = document.getElementById('skills-modal-list');
+    const modalText = document.getElementById('skills-modal-text');
+
+    modalTitle.textContent = '';
+    modalList.innerHTML = '';
+    modalText.textContent = '';
+
+    let skills = [];
+    let textContent = '';
+
+    if (type === 'soft') {
+        modalTitle.textContent = 'Soft Skills';
+        skills = [
+            'Empathy and emotional intelligence',
+            'Adaptability and resilience under pressure',
+            'Detail-oriented with a proactive approach',
+            'Conflict resolution and diplomacy'
+        ];
+    } else if (type === 'tech') {
+        modalTitle.textContent = 'Technical & Organizational Skills';
+        textContent = 'Tools: Twilio, Slack, Google Sheets, Excel, Zimbra, LinkedIn Recruiter, Outlook, Zoom, Microsoft Teams, Google Calendar, Canva, Skype, WhatsApp, Google Mail, Hurey';
+        skills = [
+            'Strong written and verbal communication',
+            'Time management and multitasking',
+            'Analytical thinking and decision-making'
+        ];
+    } else if (type === 'leadership') {
+        modalTitle.textContent = 'Leadership & Operations Management';
+        skills = [
+            'Branch operations oversight (sales, finance, compliance)',
+            'Team leadership, coaching, and performance management',
+            'Strategic goal-setting and results tracking',
+            'Financial statement analysis and performance reporting',
+            'Customer-focused service culture'
+        ];
+    } else if (type === 'customer') {
+        modalTitle.textContent = 'Customer Service & Guest Experience';
+        skills = [
+            'Guest support via web chat and SMS',
+            'Issue resolution and real-time problem-solving',
+            'Knowledge of vacation rental platforms (VRBO, Airbnb, Booking.com)',
+            'Handling guest reviews and reputation management',
+            'Providing detailed info on property availability and amenities',
+            'Building a strong brand through exceptional guest experiences'
+        ];
+    } else if (type === 'recruitment') {
+        modalTitle.textContent = 'Recruitment & Talent Acquisition';
+        skills = [
+            'End-to-end recruitment (sourcing, screening, interviewing)',
+            'Onboarding new hires and ensuring smooth transitions',
+            'Collaboration with hiring managers to understand role requirements',
+            'Culture fit assessment and employer branding',
+            'High-volume hiring and talent pipeline management'
+        ];
+    }
+
+    skills.forEach(skill => {
+        const li = document.createElement('li');
+        li.textContent = skill;
+        modalList.appendChild(li);
+    });
+
+    modalText.textContent = textContent; // Set the text content
+
+    modal.style.display = 'block';
+}
+
+//  Close modal functionality (same as before)
+document.querySelectorAll('.close').forEach(btn => {
+    btn.addEventListener('click', () => {
+        document.querySelectorAll('.modal').forEach(m => m.style.display = 'none');
+    });
+});
+
+window.addEventListener('click', (event) => {
+    document.querySelectorAll('.modal').forEach(m => {
+        if (event.target === m) {
+            m.style.display = 'none';
+        }
+    });
+});
+
+// Smooth scrolling for navigation links (same as before)
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault(); // Prevent default anchor behavior
+        const targetId = this.getAttribute('href').substring(1); // Get the target ID (without #)
+        const targetElement = document.getElementById(targetId);
+        const headerHeight = getElementHeight(document.querySelector('header')); // Get header height
+
+        if (targetElement) {
+            const targetPosition = targetElement.offsetTop - headerHeight; // Calculate target position minus header height
+
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
+// Function to get the height of an element (same as before)
+function getElementHeight(el) {
+    return el.offsetHeight;
+}
+</script>
+
+</html>
